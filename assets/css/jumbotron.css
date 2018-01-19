@@ -1,0 +1,101 @@
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
+
+#foot {
+	padding: 1em 0 0em 0 ;
+	background-color: #3c3d41;
+	text-align: center;
+}
+
+#foot .copyright {
+  background-color: #333333;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  text-align: center;
+}
+
+#foot .copyright p {
+  margin: 10px;
+  color: #ccc;
+}
+
+#foot .row {
+    margin-bottom: 30px;
+}
+
+#foot ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#foot h5 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#foot a {
+    color: #d2d1d1;
+    text-decoration: none;
+}
+
+#foot a:hover,
+#foot a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    -webkit-animation: fadein 2s;
+       -moz-animation: fadein 2s;
+        -ms-animation: fadein 2s;
+         -o-animation: fadein 2s;
+            animation: fadein 2s;
+}
+
+/*
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+*/
+
+body {
+  padding-top: 3.5rem;
+  background-image: url("../../assets/img/grid-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  /*color: #000;
+	font-family: "Open Sans", Helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight: 400;
+	letter-spacing: 0.075em;
+	line-height: 1.65em;*/
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
