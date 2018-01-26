@@ -17,7 +17,7 @@
 
 </head>
 <body>
-	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-black">
 		<a class="navbar-brand" href="index.html">RKD Engineering</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -25,8 +25,9 @@
 		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
+					<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" data-hover="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
 					<div class="dropdown-menu" aria-labelledby="dropdown01">
+						<a class="dropdown-item" href="products.html" style="color: blue;">All Products</a>
 						<a class="dropdown-item" href="product-page.html">Elite Etch ESD Cu</a>
 						<a class="dropdown-item" href="product-page.html">Nanomill</a>
 						<a class="dropdown-item" href="product-page.html">I53 Injector</a>
@@ -41,11 +42,11 @@
 				<li class="nav-item">
 					<a class="nav-link" href="company-information.html">About Us</a>
 				</li>
-				<li class="nav-item">
+				<!--li class="nav-item">
 					<a class="nav-link disabled" href="#">Purchase Orders</a>
-				</li>
+				</li-->
 			</ul>
-			<ul class="nav navbar-nav flex-row justify-content-between ml-auto">
+			<!--ul class="nav navbar-nav flex-row justify-content-between ml-auto">
 				<li class="dropdown order-1">
 					<button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle">Login <span class="caret"></span></button>
 					<ul class="dropdown-menu dropdown-menu-right mt-1">
@@ -67,7 +68,7 @@
 						</li>
 					</ul>
 				</li>
-			</ul>
+			</ul-->
 		</div>
 	</nav>
 
@@ -77,18 +78,47 @@
 				<div class="col-md-12" style="color: white; text-shadow: 1px 2px 1px #000; font-size: 150%; text-align: center; font-weight: 900; font-style: italic;">Welcome to RKD Engineering Corp, Inc.</div>
 			</div>
 			<div class="row justify-content-md-center align-items-end">
-				<div class="col col-md-auto">
+				<div class="col-sm-auto" style="padding: 2px;">
 					<a href="index.html"><img src="assets/img/RKD_Alternative.png" alt="RKD Engineering" style="width:220px"></a>
 				</div>
-				<div class="col col-md-auto">
+				<!--div class="col-sm-auto" style="padding: 2px;">
 					<a href="index.html"><img src="assets/img/home.png" class="button-grow" alt="..." style="width:150px"></a>
-					<a href="products.html"><img src="assets/img/products.png" class="button-grow" alt="..." style="width:150px"></a>
-					<a href="services.html"><img src="assets/img/services.png" class="button-grow" alt="..." style="width:150px"></a>
-					<a href="contact.html"><img src="assets/img/contact.png" class="button-grow" alt="..." style="width:150px"></a>
-					<a href="company-information.html"><img src="assets/img/about.png" class="button-grow" alt="..." style="width:150px"></a>
+				</div-->
+				<div class="col-sm-auto sub-menu-parent" style="padding: 2px;">
+					<a href="products.html"><img src="assets/img/products.png" class="button-grow sub-menu-button" alt="..." style="width:150px"></a>
+					<div class="sub-menu list-group">
+						<li class="list-group-item list-group-item-action"><a href="#">I53 Injector 7400</a></li>
+						<li class="list-group-item list-group-item-action"><a href="#">Mega Etch 7300</a></li>
+						<li class="list-group-item list-group-item-action"><a href="#">Elite Etch Cu Esd 7200</a></li>
+						<li class="list-group-item list-group-item-action"><a href="#">Elite Etch Cu 7100</a></li>
+						<li class="list-group-item list-group-item-action"><a href="#">Elite Etch 7000</a></li>
+						<li class="list-group-item list-group-item-action"><a href="#">Nanomill CNC 5100</a></li>
+						<li class="list-group-item list-group-item-action"><a href="#">Mount Plate 5800</a></li>
+					</div>
+				</div>
+				<div class="col-sm-auto sub-menu-parent" style="padding: 2px;">
+					<a href="services.html"><img src="assets/img/services.png" class="button-grow sub-menu-button" alt="..." style="width:150px"></a>
+					<div class="sub-menu list-group">
+						<li class="list-group-item list-group-item-action"><a href="#">Installation</a></li>
+						<li class="list-group-item list-group-item-action"><a href="#">Sampling</a></li>
+						<li class="list-group-item list-group-item-action"><a href="#">Repairs</a></li>
+						<li class="list-group-item list-group-item-action"><a href="#">Training</a></li>
+					</div>
+				</div>
+				<div class="col-sm-auto sub-menu-parent" style="padding: 2px;">
+					<a href="company-information.html"><img src="assets/img/about.png" class="button-grow sub-menu-button" alt="..." style="width:150px"></a>
+					<div class="sub-menu list-group">
+						<li class="list-group-item list-group-item-action"><a href="#">Company Information</a></li>
+						<li class="list-group-item list-group-item-action"><a href="#">FAQ</a></li>
+					</div>
+				</div>
+				<div class="col-sm-auto" style="padding: 2px;">
+					<a href="#"><img src="assets/img/button.png" class="button-grow sub-menu-button" alt="..." style="width:150px"></a>
+				</div>
+				<div class="col-sm-auto" style="padding: 2px;">
+					<a href="contact.html"><img src="assets/img/contact.png" class="button-grow sub-menu-button" alt="..." style="width:150px"></a>
 				</div>
 			</div>
-			<div class="main" id="top"></div>
 			<div class="row">
 				<div class="col-md-12" style="color: black; text-shadow: 1px 2px 1px #CCC; font-size: 150%; text-align: center; font-weight: 900; font-style: italic;">Failure Analysis Equipment and Beyond</div>
 			</div>
