@@ -31,8 +31,6 @@
   transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
 }
 
-
-
 #foot {
 	padding: 1em 0 0em 0 ;
 	background-color: #111;
@@ -92,6 +90,7 @@ body {
   background-image: url("../../assets/img/grid-bg1.jpg");
   background-size: cover;
   background-attachment: fixed;
+  background-color: transparent;
   /*color: #000;
 	font-family: "Open Sans", Helvetica, sans-serif;
 	font-size: 12pt;
@@ -111,16 +110,31 @@ html {
 }
 
 .jumbotron {
-
-    background-image: url("../../assets/img/flag.png"), url("../../assets/img/headfade.png"), url("../../assets/img/jumbotron_bg2.png");
+  padding: 0rem 1rem;
+  margin-bottom: 0rem;
+  border-radius: 0rem;
+  background-color: transparent;
+  background-image: url("../../assets/img/flag.png"), url("../../assets/img/headfade.png"), url("../../assets/img/jumbotron_bg2.png");
   background-repeat: no-repeat, no-repeat, repeat-x;
   background-position: center top, center top, center top;
   background-size: auto, 100% 241px, auto;
 }
 
+@media (min-width: 576px) {
+  .jumbotron {
+    padding: 1rem 2rem;
+  }
+}
+
 .carousel {
     margin-top: 20px;
 }
+
+.carousel-caption {
+  right: 0;
+  left: 0;
+}
+
 .item .thumb {
   width: 80px;
   cursor: pointer;
@@ -141,4 +155,39 @@ html {
 .list-group-overflow{
     max-height: 300px;
     overflow-y:scroll; 
+}
+
+.list-group-item.active {
+  background-color: #366da7;
+  border-color: #366da7;
+}
+
+/* Grow */
+.button-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.button-grow:hover,
+.button-grow:focus,
+.button-grow:active {
+    transform: scale(1.1);
+}
+
+.navbar .dropdown-menu .form-control {    
+    width: 200px;   
+}
+
+.bg-black {
+  background-color: #222 !important;
+}
+
+.bg-transparent {
+  background-color: rgba(52,58,64,0.5) !important;
 }
