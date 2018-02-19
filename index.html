@@ -1,94 +1,348 @@
-<html>
-    <head>
-        <title>Contact Form Tutorial by Bootstrapious.com</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-        <link href='custom.css' rel='stylesheet' type='text/css'>
-    </head>
-    <body>
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="RKD Engineering specializes in acid decapsulation for semiconductor manufacturers">
+	<meta name="author" content="James McKenna">
+	<link rel="icon" href="assets/img/favicon.ico">
 
-        <div class="container">
+	<title>RKD Engineering</title>
 
-            <div class="row">
+	<!-- Bootstrap core CSS -->
+	<link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
-                <div class="col-lg-8 col-lg-offset-2">
+	<!-- Custom styles for this template -->
+	<link href="assets/css/jumbotron.css" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/cookieconsent.min.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-black">
+		<a class="navbar-brand" href="index.html">RKD Engineering</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" data-hover="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown01">
+						<a class="dropdown-item" href="products.html" style="color: blue;">All Products</a>
+						<a class="dropdown-item" href="i53-injector-7400.html">I53 Injector 7400</a>
+						<a class="dropdown-item" href="mega-etch-7300.html">Mega Etch 7300</a>
+						<a class="dropdown-item" href="elite-etch-cu-esd-7200.html">Elite Etch Cu ESD 7200</a>
+						<a class="dropdown-item" href="elite-etch-cu-7100.html">Elite Etch Cu 7100</a>
+						<a class="dropdown-item" href="elite-etch-7000.html">Elite Etch Model 7000</a>
+						<a class="dropdown-item" href="nanomill-cnc-5100.html">Nanomill CNC 5100</a>
+						<a class="dropdown-item" href="mountplate-5800.html">Mount Plate 5800</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="services.html">Services</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="company-information.html">About Us</a>
+				</li>
+				<!--li class="nav-item">
+					<a class="nav-link disabled" href="#">Purchase Orders</a>
+				</li-->
+			</ul>
+			<ul class="nav navbar-nav flex-row justify-content-between ml-auto">
+				<li>|</li>  
+				<li class="nav-item">
+					<a class="nav-link" href="mailto:info@rkdengineering.com">info@rkdengineering.com</a>
+				</li>
+			</ul>
+			<!--ul class="nav navbar-nav flex-row justify-content-between ml-auto">
+				<li class="dropdown order-1">
+					<button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle">Login <span class="caret"></span></button>
+					<ul class="dropdown-menu dropdown-menu-right mt-1">
+						<li class="p-3">
+							<form class="form" role="form">
+								<div class="form-group">
+									<input id="emailInput" placeholder="Email" class="form-control form-control-sm" type="text" required="">
+								</div>
+								<div class="form-group">
+									<input id="passwordInput" placeholder="Password" class="form-control form-control-sm" type="text" required="">
+								</div>
+								<div class="form-group">
+									<button type="submit" class="btn btn-primary btn-block">Login</button>
+								</div>
+								<div class="form-group text-xs-center">
+									<small><a href="#">Forgot password?</a></small>
+								</div>
+							</form>
+						</li>
+					</ul>
+				</li>
+			</ul-->
+		</div>
+	</nav>
 
-                    <h1>Contact form Tutorial from <a href="http://bootstrapious.com">Bootstrapious.com</a></h1>
+	<main role="main">
+		<div class="jumbotron">
+			<div class="row">
+				<div class="col-md-12" style="color: white; text-shadow: 1px 2px 1px #000; font-size: 150%; text-align: center; font-weight: 900; font-style: italic;">Welcome to RKD Engineering Corp, Inc.</div>
+			</div>
+			<div class="row justify-content-md-center align-items-end">
+				<div class="col-sm-auto" style="padding: 2px;">
+					<a href="index.html"><img src="assets/img/RKD_Alternative.png" alt="RKD Engineering" style="width:220px"></a>
+				</div>
+				<div class="col-sm-auto sub-menu-parent" style="padding: 2px;">
+					<a href="products.html"><img src="assets/img/products.png" class="button-grow sub-menu-button" alt="..." style="width:150px"></a>
+					<div class="sub-menu list-group">
+						<li class="list-group-item list-group-item-action"><a href="i53-injector-7400.html">I53 Injector 7400</a></li>
+						<li class="list-group-item list-group-item-action"><a href="mega-etch-7300.html">Mega Etch 7300</a></li>
+						<li class="list-group-item list-group-item-action"><a href="elite-etch-cu-esd-7200.html">Elite Etch Cu Esd 7200</a></li>
+						<li class="list-group-item list-group-item-action"><a href="elite-etch-cu-7100.html">Elite Etch Cu 7100</a></li>
+						<li class="list-group-item list-group-item-action"><a href="elite-etch-7000.html">Elite Etch 7000</a></li>
+						<li class="list-group-item list-group-item-action"><a href="nanomill-cnc-5100.html">Nanomill CNC 5100</a></li>
+						<li class="list-group-item list-group-item-action"><a href="mountplate-5800.html">Mount Plate 5800</a></li>
+					</div>
+				</div>
+				<div class="col-sm-auto" style="padding: 2px;">
+					<a href="gallery.html"><img src="assets/img/gallery.png" class="button-grow sub-menu-button" alt="..." style="width:150px"></a>
+				</div>
+				<div class="col-sm-auto sub-menu-parent" style="padding: 2px;">
+					<a href="services.html"><img src="assets/img/services.png" class="button-grow sub-menu-button" alt="..." style="width:150px"></a>
+					<div class="sub-menu list-group">
+						<li class="list-group-item list-group-item-action"><a href="services.html">Installation/Training</a></li>
+						<li class="list-group-item list-group-item-action"><a href="services.html">Sample Preparation</a></li>
+						<li class="list-group-item list-group-item-action"><a href="services.html">Repairs and Upgrades</a></li>
+						<li class="list-group-item list-group-item-action"><a href="services.html">Loaner Program</a></li>
+					</div>
+				</div>
+				<div class="col-sm-auto sub-menu-parent" style="padding: 2px;">
+					<a href="company-information.html"><img src="assets/img/about.png" class="button-grow sub-menu-button" alt="..." style="width:150px"></a>
+					<div class="sub-menu list-group">
+						<li class="list-group-item list-group-item-action"><a href="company-information.html">Company Information</a></li>
+						<li class="list-group-item list-group-item-action"><a href="facilities.html">About our Facilities</a></li>
+						<li class="list-group-item list-group-item-action"><a href="faq.html">FAQ</a></li>
+					</div>
+				</div>
+				<div class="col-sm-auto" style="padding: 2px;">
+					<a href="contact.html"><img src="assets/img/contact.png" class="button-grow sub-menu-button" alt="..." style="width:150px"></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12" style="color: black; text-shadow: 1px 2px 1px #CCC; font-size: 150%; text-align: center; font-weight: 900; font-style: italic;">Failure Analysis Equipment and Beyond</div>
+			</div>
+		</div>
 
-                    <p class="lead">This is a demo for our tutorial dedicated to crafting working Bootstrap contact form with PHP and AJAX background.</p>
-                    <p class="lead">This file uses PHPMailer to send the emails.</p>
+		<!--Begin Page Content-->
 
+		<div class="container">
+			<br>
+			<a href="ToDo.html" style="color: red;">To Do List</a>
+			<div class="row">
+				<section>
+						<div class="container py-3">
+							<div class="card">
+								<div class="row ">
+									<div class="col-md-4">
+										<a href="products.html"><img src="assets/img/opener.jpg" class="w-100"></a>
+									</div>
+									<div class="col-md-8 px-3">
+										<div class="card-block px-3">
+											<a href="products.html"><h2 class="card-title" style="margin-top: 20px;">Semiconductor Failure Analysis Products</h2></a>
+											<p class="card-text">RKD Engineering designs, manufactures, and sells an extensive line of sample preparation products. These products allow a Failure Analysis engineer to open a wide range of integrated circuit packages with various synthetic polymers and internal metals. </p>
+											<p class="card-text">Our products expose the die surface and bond wires, and allow precavitation of polymer IC packages. The automated process is completed quickly in a safe and efficient manner.</p>
+											<a href="products.html"><img src="assets/img/seemore.png" class="button-grow" alt="..." style="width:150px"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			<div class="row">
+				<div class="col-md-5">
+					<div class="card card-height">
+						<div class="card-block px-3">
+							<h2 class="card-title" style="margin-top: 20px; color: #007bff;">RKD Engineering</h2>
+							<p class="card-text">RKD Engineering specializes in acid decapsulation for semiconductor packages. With over 50 years of experience in the industry, our mission is to provide the highest quality products for semiconductor failure analysis by using a patented "wet etch" acid delivery system.</p>
+							<p class="card-text"><b>Product Features:</b><br>
+								&bull; The most complete line of Failure Analysis sample preparation systems.<br>
+								&bull; Easy to use counterfeit detection systems and equipment packages.<br>
+								&bull; Integrated chemical resistant fluid handling systems.<br><br>
+							</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-7">
+					<div class="list-group">
+						<a class="list-group-item flex-column align-items-start">
+							<div class="w-100 justify-content-between">
+								<h2 class="mb-1" style="text-align: center; color: #007bff">News and Updates</h2>
+							</div>
+						</a>
+					</div>
+					<div class="list-group-overflow">
+						<a class="list-group-item list-group-item-action flex-column align-items-start">
+							<div class="d-flex w-100 justify-content-between">
+								<h5 class="mb-1"><b>Website Update</b></h5>
+								<small class="text-muted">2/16/18</small>
+							</div>
+							<p class="mb-1">RKD Engineering is proud to unveil a new and updated website! Products and Services are available to view and order.</p>
+							<small>Check back soon for more updates.</small>
+						</a>
+						<a class="list-group-item list-group-item-action flex-column align-items-start">
+							<div class="d-flex w-100 justify-content-between">
+								<h5 class="mb-1"><b>ISTFA 2017</b></h5>
+								<small class="text-muted">11/9/17</small>
+							</div>
+							<p class="mb-1">This year at the International Symposium for Testing and Failure Analysis we were glad to meet so many engineers interested in our booth. See you all next year at Phoenix, Arizona!</p>
+							<small>Please feel free to contact us with any remaining questions you have.</small>
+						</a>
+						<a class="list-group-item list-group-item-action flex-column align-items-start">
+							<div class="d-flex w-100 justify-content-between">
+								<h5 class="mb-1"><b>I53 Injector</b></h5>
+								<small class="text-muted">6/6/17</small>
+							</div>
+							<p class="mb-1">With a shortage of precious metals, manufacturers are experimenting with new silver bond wire solutions. RKD is the only manufacturer equipped to expose silver wire technology without causing harm to the IC.</p>
+							<small class="text">Request a quote for the I53 Injector today.</small>
+						</a>
+						<a class="list-group-item list-group-item-action flex-column align-items-start">
+							<div class="d-flex w-100 justify-content-between">
+								<h5 class="mb-1"><b>The Mega Etch</b></h5>
+								<small class="text-muted">10/2/16</small>
+							</div>
+							<p class="mb-1">Do you need the space to decapsulate a chip on a large surface PCB? Do you want to power up your semiconductor even after it has been decapsulated? Check out our RKD Engineering Mega Etch.</p>
+							<small class="text">Available immediately on our product page.</small>
+						</a>
+					</div>
+					<a class="list-group-item flex-column align-items-start">
+							<div class="w-100 justify-content-between">
+								<h2 class="mb-1" style="text-align: center;"></h2>
+							</div>
+						</a>
+				</div>
+			</div>
 
-                    <form id="contact-form" method="post" action="contact-2.php" role="form">
+				<div class="row">
+					<section>
+						<div class="container py-3">
+							<div class="card">
+								<div class="row ">
+									<div class="col-md-8 px-3">
+										<div class="card-block px-3">
+											<a href="counterfeit-detection.html"><h2 class="card-title" style="margin-top: 20px;">Counterfeit Detection</h2></a>
+											<p class="card-text">Our products can be used to understand your supplier better. By using jet etch decapsulation, your enterprise can ensure that the semiconductor products you pay for are the products you receive. </p>
+											<p class="card-text"><b>Considerations:</b><br>
+												&bull; Are the best quality materials used in the package?<br>
+												&bull; Does the manufacturer identifier appear on the die?<br>
+											&bull; Has the semiconductor been stored or shipped safely?</p>
+											<a href="counterfeit-detection.html"><img src="assets/img/seemore.png" class="button-grow" alt="..." style="width:150px"></a>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<a href="counterfeit-detection.html"><img src="assets/img/sample.jpg" class="w-100"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
 
-                        <div class="messages"></div>
+					<section>
+						<div class="container py-3">
+							<div class="card">
+								<div class="row ">
+									<div class="col-md-4">
+										<a href="fluid-handling.html"><img src="assets/img/pumps.jpg" class="w-100"></a>
+									</div>
+									<div class="col-md-8 px-3">
+										<div class="card-block px-3">
+											<a href="products.html"><h2 class="card-title" style="margin-top: 20px;">Fluid Handling</h2></a>
+											<p class="card-text">RKD Engineering Corp, Inc. designs and manufactures positive displacement diaphragm metering pumps and fluid handling systems. All our pumps have PTFE (Teflon) wetted parts and are pneumatically actuated to totally isolate the fluid path to the package. </p>
+											<p class="card-text">These are used in our Semiconductor Failure Analysis products pumping very corrosive fuming nitric and sulfuric acids as well as organic solvents.</p>
+											<a href="fluid-handling.html"><img src="assets/img/seemore.png" class="button-grow" alt="..." style="width:150px"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<hr>
+			</div>
 
-                        <div class="controls">
+			<!--End of Page Content-->
 
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_name">Firstname *</label>
-                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_lastname">Lastname *</label>
-                                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_email">Email *</label>
-                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_phone">Phone</label>
-                                        <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="form_message">Message *</label>
-                                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <input type="submit" class="btn btn-success btn-send" value="Send message">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="text-muted"><strong>*</strong> These fields are required. Contact form template by <a href="https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form" target="_blank">Bootstrapious</a>.</p>
-                                </div>
-                            </div>
-                        </div>
+		</main>
+		<footer id="foot">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3">
+						<img src="assets/img/RKD_Alternative.png" style="width:160px; padding-top: 2em;"><br>
+						<img src="assets/img/usa.png" class="button-grow" alt="..." style="width:160px; padding-top:5px;">
+					</div>
+					<div class="col-sm-2">
+						<h5>Get started</h5>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="products.html">Products</a></li>
+							<li><a href="services.html">Services</a></li>
+							<li><a href="counterfeit-detection.html">Counterfeit Detection</a></li>
+							<li><a href="fluid-handling.html">Fluid Handling</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-2">
+						<h5>Popular</h5>
+						<ul>
+							<li><a href="elite-etch-cu-esd-7200.html">Elite Etch Cu ESD 7200</a></li>
+              <li><a href="mega-etch-7300.html">Mega Etch 7300</a></li>
+              <li><a href="i53-injector-7400.html">I53 Injector 7400</a></li>
+              <li><a href="nanomill-cnc-5100.html">Nanomill CNC 5100</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-2">
+						<h5>Information</h5>
+						<ul>
+							<li><a href="faq.html">FAQ</a></li>
+							<li><a href="contact.html">Contact us</a></li>
+							<li><a href="company-information.html">Company Information</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-1"></div>
+					<div class="col-sm-2">
+						<img src="assets/img/medal.png" class="button-grow" alt="..." style="width:100px"><br>
+						<img src="assets/img/ce-mark.png" style="width:50px; padding-top: 5px; padding-right: 5px;">
+						<img src="assets/img/rohs.png" style="padding-top: 10px;">
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<p>All Materials &copy; 2018 RKD Engineering Corp, Inc. | <a href="terms-conditions.html">Terms & Conditions</a> | <a href="privacy-policy.html">Privacy Policy</a></p>
+			</div>
+		</footer>
 
-                    </form>
-
-                </div><!-- /.8 -->
-
-            </div> <!-- /.row-->
-
-        </div> <!-- /.container-->
-
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <script src="validator.js"></script>
-        <script src="contact-3.js"></script>
-    </body>
-</html>
+    <!-- Bootstrap core JavaScript
+    	================================================== -->
+    	<!-- Placed at the end of the document so the pages load faster -->
+    	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    	<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+    	<script src="assets/js/vendor/popper.min.js"></script>
+    	<script src="dist/js/bootstrap.min.js"></script>
+    	<script src="assets/js/cookieconsent.min.js"></script>
+    	<script>
+    		window.addEventListener("load", function(){
+    			window.cookieconsent.initialise({
+    				"palette": {
+    					"popup": {
+    						"background": "#000"
+    					},
+    					"button": {
+    						"background": "#f1d600"
+    					}
+    				},
+    				"theme": "classic",
+    				"position": "bottom-right"
+    			})});
+    		</script>
+    	</body>
+    	</html>
